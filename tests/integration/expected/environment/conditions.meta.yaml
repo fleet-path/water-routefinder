@@ -1,0 +1,39 @@
+waterpath_env_schema: '0.2'
+crs: EPSG:4326
+title: Environmental conditions - dublin-bay
+network_ref:
+  routes_sha256: 70bf45ae4fd3bb2bec1cc574529a1af19aa78ecf41de8c34e9b2ac3bc90f73c7
+  harbours_sha256: 94217f0da1e7e650c9f848d2d346727c7fdc51881881413db63597c1b3de0394
+time_coverage:
+  start: '2024-01-01T00:00:00+00:00'
+  stop: '2024-01-08T00:00:00+00:00'
+  step: 1h
+variables:
+  wind_speed:
+    units: m s-1
+    convention: null
+  wind_from_direction:
+    units: degree
+    convention: from
+  current_speed:
+    units: m s-1
+    convention: null
+  current_to_direction:
+    units: degree
+    convention: to
+  wave_height:
+    units: m
+    convention: null
+  wave_from_direction:
+    units: degree
+    convention: from
+  wave_period:
+    units: s
+    convention: null
+provenance:
+  sources:
+  - current:cmems
+  - wave:cmems
+  - wind:cmems
+  builder: water-routefinder 0.0.0 c1f012f
+  created: '2026-09-14T23:15:37.213605Z'
